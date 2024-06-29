@@ -95,18 +95,18 @@ body {
 
 @media (max-width: 400px) {
     #top-bar {
-        padding-top: 30px;
-        padding-bottom: 30px;
+        padding-top: 55px;
+        padding-bottom: 55px;
         justify-content: center;
         padding-right: 0px;
     }
 
     #top-bar > a {
-        font-size: 25px;
+        font-size: 40px;
     }
 
     .my-name {
-        margin-top: 450px;
+        margin-top: 680px;
         font-size: 20px;
     }
 
