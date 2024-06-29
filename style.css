@@ -1,0 +1,93 @@
+body {
+    /* URL for the background */
+    background-image: url(https://images.unsplash.com/photo-1509023464722-18d996393ca8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+
+    font-family: "Inter", sans-serif;
+
+}
+
+#top-bar {
+    background-color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    /* It is the cotainer - flexbox */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap:30px;
+    padding-right: 150px;
+
+    /* Making the top bar dark */
+    background-color: rgb(42, 44, 43);
+    /* Text color */
+    color:whitesmoke;
+}
+
+#top-bar > a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#a1, #a2, #a3 {
+    transition-property: transform;
+    transition-duration: 0.2s;
+}
+
+#a1:hover, #a2:hover, #a3:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#a1 {
+    order: 1;
+}
+
+
+
+.my-name {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 50px;
+    margin-top: 180px;
+    color: rgb(255, 255, 255);
+}
+
+.intro-paragraphs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    /* Aligning all the text to center */
+    text-align: center;
+    color: whitesmoke;
+    margin-top: 10px;
+}
+
+@media (max-width: 800px) {
+    #top-bar {
+        justify-content: center;
+        padding-right: 0px;
+    }
+
+    .my-name {
+        font-size: 30px;
+        margin-top: 200px;
+    }
+
+    .intro-paragraphs {
+        font-size: 15px;
+    }
+
+    
+}
